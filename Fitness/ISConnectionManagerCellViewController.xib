@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ISConnectionManagerCellViewController">
+            <connections>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-BV-kta" userLabel="View Conection Manager Cell">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="31"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wahoo HR Device" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jr-N6-tRF">
+                            <rect key="frame" x="10" y="10" width="122" height="11"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xib-bl-Qy2">
+                            <rect key="frame" x="296" y="10" width="14" height="11"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="14" id="Knh-S5-MRC"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-line-640.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZVA-MU-hVy">
+                            <rect key="frame" x="10" y="30" width="310" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Df2-7v-OYS"/>
+                                <constraint firstAttribute="width" constant="310" id="vvt-kZ-7b9"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Xib-bl-Qy2" secondAttribute="trailing" constant="10" id="4UO-uT-PkX"/>
+                        <constraint firstAttribute="bottom" secondItem="Xib-bl-Qy2" secondAttribute="bottom" constant="10" id="RKt-sp-w9l"/>
+                        <constraint firstAttribute="bottom" secondItem="ZVA-MU-hVy" secondAttribute="bottom" id="dhS-nv-vLd"/>
+                        <constraint firstItem="5jr-N6-tRF" firstAttribute="leading" secondItem="aX4-BV-kta" secondAttribute="leading" constant="10" id="esJ-NO-55l"/>
+                        <constraint firstAttribute="width" constant="320" id="hqa-aA-H2r"/>
+                        <constraint firstItem="5jr-N6-tRF" firstAttribute="top" secondItem="aX4-BV-kta" secondAttribute="top" constant="10" id="i8K-Bf-KEH"/>
+                        <constraint firstAttribute="height" constant="31" id="rzf-C5-8si"/>
+                        <constraint firstItem="Xib-bl-Qy2" firstAttribute="top" secondItem="aX4-BV-kta" secondAttribute="top" constant="10" id="s4p-RM-0Kv"/>
+                        <constraint firstAttribute="trailing" secondItem="ZVA-MU-hVy" secondAttribute="trailing" id="sZi-WD-Vd0"/>
+                        <constraint firstAttribute="bottom" secondItem="5jr-N6-tRF" secondAttribute="bottom" constant="10" id="yAd-jr-O7B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aX4-BV-kta" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="mDb-cy-uFj"/>
+                <constraint firstItem="aX4-BV-kta" firstAttribute="top" secondItem="1" secondAttribute="top" id="sEL-5r-yeX"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="black-line-640.png" width="320" height="1"/>
+        <image name="selected.png" width="11" height="11"/>
+    </resources>
+</document>
